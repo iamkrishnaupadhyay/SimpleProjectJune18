@@ -83,14 +83,34 @@ nav input[type="search"] {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     main .product-card {
         width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    main .product-card {
+        width: calc(50% - 30px);
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav input[type="search"] {
+        margin-top: 10px;
+        width: 100%;
     }
 }
 
 @media (max-width: 480px) {
     main .product-card {
         width: calc(100% - 40px);
+    }
+
+    header nav {
+        align-items: center;
     }
 }
