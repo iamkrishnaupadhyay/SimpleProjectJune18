@@ -20,7 +20,8 @@ function createUI(data) {
             <div>
                 <img src="${products[i].thumbnail}" alt="${products[i].title}">
                 <h3>${products[i].title}</h3>
-                <p>$${products[i].price}</p>
+                <p>Rs.${products[i].price}</p>
+                <p>Description: ${products[i].description}</p>
             </div>`
         main.appendChild(newCard);
     }
